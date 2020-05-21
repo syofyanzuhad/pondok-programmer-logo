@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pondok Programmer</title>
+   <style>
+      main, .logo {
+         background-color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .mr-5 {
+         margin-right: 150px;
+      }
+      .mt-5 {
+         margin-top: 150px;
+      }
+      .box {
+         background-color: white;
+         position: absolute;
+         width: 300px;
+         height: 300px;
+         align-items: center;
+         border-radius: 10px;
+         z-index: 9;
+      }
+      .black {
+         width: 150px;
+         height: 150px;
+         background-color: black;
+      }
+      .left .black {
+         border-radius: 25px 10px 10px 10px;
+      }
+      .right .black {
+         border-radius: 10px 10px 25px 10px;
+      }
+      .tosca {
+         width: 150px;
+         height: 150px;
+         background-color: #008B74;
+         border-radius: 10px;
+      }
+      .left .tosca {
+         border-radius: 10px 10px 10px 20px;
+      }
+      .right .tosca {
+         border-radius: 10px 25px 10px 10px;
+      }
+      .addBlack {
+         width: 100px;
+         height: 75px;
+         background-color: rgb(0, 0, 0);
+         position: absolute;
+         border-radius: 10px;
+      }
+      .left .addBlack {
+         margin: 7.5em -2em;
+         transform: rotate(135deg);
+      }
+      .right .addBlack {
+         margin: -2.5em 5em;
+         transform: rotate(135deg);
+      }
+      .addTosca {
+         width: 250px;
+         height: 75px;
+         background-color: #008B74;
+         position: absolute;
+         border-radius: 10px;
+      }
+      .left .addTosca {
+         margin: -6em -10em;
+         transform: rotate(45deg);
+         border-radius: 10px 10px 10px 20px;
+      }
+      .right .addTosca {
+         margin: 11em 3.5em;
+         transform: rotate(45deg);
+         border-radius:  10px 25px 10px 10px;
+      }
+      article {
+         text-align: center;
+         position: absolute;
+         top: 25em;
+         font-family: sans-serif;
+      }
+      .text-black {
+         font-size: 120px;
+         margin-block-end: 0px;
+      }
+      .text-tosca {
+         font-size: 70px;
+         margin-block-start: 0px;
+         color: #008B74;
+      }
+   </style>
+</head>
+<body>
+   <main>
+      <div class="logo">
+         <div class="left">
+            <div class="black mr-5">
+               <div class="addBlack"></div>
+            </div>
+            <div class="tosca mt-5">
+               <div class="addTosca"></div>
+            </div>
+         </div>
+         <div class="box"></div>
+         <div class="right">
+            <div class="tosca">
+               <div class="addTosca"></div>
+            </div>
+            <div class="black mt-5">
+               <div class="addBlack"></div>
+            </div>
+         </div>
+      </div>
+      <article>
+         <h1 class="text-black">PONDOK</h1>
+         <h1 class="text-tosca">PROGRAMMER</h1>
+      </article>
+   </main>
+</body>
+</html>
